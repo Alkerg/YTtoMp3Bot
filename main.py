@@ -2,12 +2,15 @@
 import discord
 import os
 import asyncio
+from dotenv import load_dotenv
 from discord.errors import HTTPException
 from discord.ext import commands
 from discord import app_commands, File
 from pytube import YouTube, exceptions
 from pytz import timezone
 from datetime import datetime
+
+load_dotenv()
 
 # Constants
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
